@@ -3,7 +3,7 @@ const https = require('https');
 module.exports = {
     name: 'server',
     description: 'Check server\'s online status and players. Data is updated every 5 minutes',
-    args: '<ip address>',
+    args: '<minecraft-aber-modded.de>',
     execute(message, args) {
         //check if there're arguments
         if(!args.length) {
