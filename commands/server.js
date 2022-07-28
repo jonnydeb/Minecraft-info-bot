@@ -4,13 +4,9 @@ module.exports = {
     name: 'server',
     description: 'Check server\'s online status and players. Data is updated every 5 minutes',
     args: '<minecraft-aber-modded.de>',
+    ip: 'minecraft-aber-modded.de',
     execute(message, args) {
-        //check if there're arguments
-        if(!args.length) {
-            message.reply('please specify the server\'s ip address');
-            return;
-        }
-        //create new request
+        //create new request}
         const options = {
             hostname: 'api.mcsrvstat.us',
             port: 443,
@@ -25,23 +21,23 @@ module.exports = {
             response.on('end', () => {
                 resp = JSON.parse(str);
                 if(!resp.hostname) {
-                    message.channel.send('Couldn\'t find any server with ip ' + args[0]);
+                    message.channel.send('Couldn\'t find any server with ip ' + minecraft-aber-modded.de);
                     return;
                 }
                 //create answer message with default offline data
                 let embed = {
                     color: '#00b300',
-                    title: args[0],
+                    title: ,
                     author: {
-                        name: 'Minecraft info',
+                        name: 'Minecraft info'minecraft-aber-modded.de,
                         url: 'https://github.com/Jystro/Minecraft-info-bot'
                     },
                     thumbnail: {
-                        url: 'https://api.mcsrvstat.us/icon/' + args[0]
+                        url: 'https://api.mcsrvstat.us/icon/' + minecraft-aber-modded.de
                     },
                     fields: [{ name: 'Status', value: 'Offline' }],
                     image: {
-                        url: 'https://api.mcsrvstat.us/icon/' + args[0]
+                        url: 'https://api.mcsrvstat.us/icon/' + minecraft-aber-modded.de
                     },
                     timestamp: new Date(),
                     footer: {
