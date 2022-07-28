@@ -27,17 +27,17 @@ module.exports = {
                 //create answer message with default offline data
                 let embed = {
                     color: '#00b300',
-                    title: ,
+                    title: 'sas',
                     author: {
-                        name: 'Minecraft info' + ip,
+                        name: 'Minecraft info minecraft-aber-modded.de' ,
                         url: 'https://github.com/Jystro/Minecraft-info-bot'
                     },
                     thumbnail: {
-                        url: 'https://api.mcsrvstat.us/icon/' + ip
+                        url: 'https://api.mcsrvstat.us/icon/minecraft-aber-modded.de'
                     },
                     fields: [{ name: 'Status', value: 'Offline' }],
                     image: {
-                        url: 'https://api.mcsrvstat.us/icon/' + ip
+                        url: 'https://api.mcsrvstat.us/icon/minecraft-aber-modded.de'
                     },
                     timestamp: new Date(),
                     footer: {
