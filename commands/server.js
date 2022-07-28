@@ -10,7 +10,7 @@ module.exports = {
         const options = {
             hostname: 'api.mcsrvstat.us',
             port: 443,
-            path: '/2/' + minecraft-aber-modded.de,
+            path: '/2/minecraft-aber-modded.de',
             method: 'GET'
         }
         const request = https.request(options, response => {
@@ -21,7 +21,7 @@ module.exports = {
             response.on('end', () => {
                 resp = JSON.parse(str);
                 if(!resp.hostname) {
-                    message.channel.send('Couldn\'t find any server with ip ' + minecraft-aber-modded.de);
+                    message.channel.send('Couldn\'t find any server with ip ' + ip);
                     return;
                 }
                 //create answer message with default offline data
@@ -29,15 +29,15 @@ module.exports = {
                     color: '#00b300',
                     title: ,
                     author: {
-                        name: 'Minecraft info'minecraft-aber-modded.de,
+                        name: 'Minecraft info' + ip,
                         url: 'https://github.com/Jystro/Minecraft-info-bot'
                     },
                     thumbnail: {
-                        url: 'https://api.mcsrvstat.us/icon/' + minecraft-aber-modded.de
+                        url: 'https://api.mcsrvstat.us/icon/' + ip
                     },
                     fields: [{ name: 'Status', value: 'Offline' }],
                     image: {
-                        url: 'https://api.mcsrvstat.us/icon/' + minecraft-aber-modded.de
+                        url: 'https://api.mcsrvstat.us/icon/' + ip
                     },
                     timestamp: new Date(),
                     footer: {
