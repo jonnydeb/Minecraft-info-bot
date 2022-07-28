@@ -14,7 +14,7 @@ module.exports = {
         const options = {
             hostname: 'api.mcsrvstat.us',
             port: 443,
-            path: '/2/' + args[0],
+            path: '/2/' + minecraft-aber-modded.de,
             method: 'GET'
         }
         const request = https.request(options, response => {
